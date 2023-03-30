@@ -22,7 +22,6 @@ const users = [
 const getUsers = async (req, res) => {
     res.status(200).json(users);
 };
-
 const addUser = async (req, res) => {
     const user = req.body;
     user.id = users.length + 1;
