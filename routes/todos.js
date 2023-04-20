@@ -3,8 +3,8 @@ const { getTodos, createTodos } = require('../controllers/todos.controller');
 
 const router = express.Router();
 
-router.get('/todos/:userID', getTodos); // Retrieves post comments GET
+router.get('/:userID', getTodos); // Retrieves post comments GET
 
-router.post('/todos', createTodos); // Creates a post comment POST
+router.post('/', createTodos); // Creates a post comment POST
 
 module.exports = router;
